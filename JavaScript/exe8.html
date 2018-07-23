@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var num = prompt("Enter Number");
+		var s = num.toString();
+		
+		count = 0
+		while (true)
+		{
+			r = 0;
+			for (i=0; i<s.length; i++)
+			{
+				r += parseInt(s[i]) ;
+			}
+			
+			s = r.toString()
+			count += 1;
+			
+			if (r<10)
+			{
+				
+				break;
+			}
+			
+		}
+		alert(count)
+	</script>
+</head>
+<body>
+
+</body>
+</html>

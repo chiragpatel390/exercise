@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+<p id="rev"></p>
+<script type="text/javascript">
+		var s = prompt("Enter string:","");
+		function reverse()
+		{
+			var r = '';
+			for (i=s.length-1; i>=0; i--)
+			{
+				r += s[i];
+			}
+			return r
+		}
+	
+		document.getElementById("rev").innerHTML = reverse()
+	</script>
+</body>
+</html>

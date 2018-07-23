@@ -1,0 +1,26 @@
+<html>
+<head>
+	<script>
+		function py(){
+		var str = prompt("Enter string", "");
+		if (str.slice(0,2) != 'Py')
+		{
+			document.getElementById("demo").innerHTML = 'Py' + str;
+		}
+		else
+		{
+			document.getElementById("demo").innerHTML = str;	
+		}
+		}
+</script>
+</head>
+<body>
+
+<p>click On the Button to Enter String !!</p>
+
+<button id = "name" onclick="py()"> Click Me </button>
+
+<p id="demo"></p>
+
+</body>
+</html>

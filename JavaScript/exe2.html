@@ -1,0 +1,31 @@
+<html>
+<head>
+	<script>
+		function py(){
+		var str = prompt("Enter string", "");
+		if (str.length >= 1){
+			if (str.length > 1)
+			{
+				var i = 0;
+				var j = -1;
+				str = str.substr(-1) + str.slice(1,-1) + str.substr(0, 1);
+				document.getElementById("demo").innerHTML = str;
+			}
+			else
+			{
+			document.getElementById("demo").innerHTML = str;	
+			}
+		}
+	}
+</script>
+</head>
+<body>
+
+<p>click On the Button to Enter String !!</p>
+
+<button id = "name" onclick="py()"> Click Me </button>
+
+<p id="demo"></p>
+
+</body>
+</html>

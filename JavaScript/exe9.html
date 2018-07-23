@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var n = prompt("what is size of square matrix ?","");
+		a = []
+		for (i=0; i<n; i++)
+		{
+			b = []
+			for (j=0; j<n; j++)
+			{
+				b.push(prompt("Enter "+i+" row"));
+			}
+			a.push(b);
+		}
+		function diagonal() {
+			for (i = 0; i<a.length; i++)
+			{
+				for(j=0; j<a.length; j++)
+				{
+					if(i != j && a[i][j] != 0)
+					{
+						return false;
+					}
+				}
+			}
+			return true;
+		}
+		alert(diagonal())
+	</script>
+</head>
+<body>
+
+</body>
+</html>

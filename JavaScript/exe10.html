@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var n = prompt("Enter Decimal Number");
+		var bin = Number(n).toString(2);
+
+		function Reverse() {
+			var r = '';
+			for (i=bin.length-1; i>=0; i--)
+			{
+				r += bin[i];
+			}
+			return r
+		}
+
+		rev_bin = Reverse();
+		num =  parseInt(rev_bin,2);
+		alert(num)
+	</script>
+</head>
+<body>
+
+</body>
+</html>

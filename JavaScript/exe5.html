@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		a = [];
+		for (i=0; i<3; i++)
+		{
+			a.push(prompt("enter number"));
+		}
+		function move()
+		{
+			var n = a.splice(0, 1);
+			a.splice(3, 0, n)
+			return a
+		}
+		alert(move())
+	</script>
+</head>
+<body>
+
+</body>
+</html>
